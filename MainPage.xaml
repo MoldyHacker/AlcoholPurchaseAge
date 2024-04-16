@@ -19,6 +19,22 @@
                 MaximumDate="{x:Static sys:DateTime.Now}"
                 Format="D"/>
 
+            <Label
+                Text="Select your country:"
+                FontSize="Medium"/>
+
+            <Picker
+                x:Name="countryPicker"
+                Title="Choose a country">
+                <Picker.Items>
+                    <x:String>United States</x:String>
+                    <x:String>Canada</x:String>
+                    <x:String>United Kingdom</x:String>
+                    <x:String>Germany</x:String>
+                    <x:String>Japan</x:String>
+                </Picker.Items>
+            </Picker>
+
             <Button
                 Text="Check"
                 Clicked="OnCheckClicked"/>
